@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+}
+
+.image-container {
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin: 50px 0;
+}
+
+.fade-image {
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.image-container.in-view .fade-image {
+  opacity: 1;
+}
